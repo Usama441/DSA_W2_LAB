@@ -6,17 +6,19 @@
 using namespace std;
 
 void clear_screen() {
+
 #ifdef _WIN32
     system("cls"); 
 #else
     system("clear");
 #endif
+
 }
 
 int main() {
     
     clear_screen();
-    
+
     Book book1("The Great Gatsby", "9780743273565", 1925);
     Book book2("To Kill a Mockingbird", "9780061120084", 1960);
     Book book3("1984", "9780451524935", 1949);
