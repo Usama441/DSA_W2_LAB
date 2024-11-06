@@ -1,13 +1,21 @@
+#ifndef LIBRARY_H
+#define LIBRARY_H
+
 #include "Book.h"
-#include "Author.h"
+#include <vector>
+#include"Author.h"
 
-class Library{
+using namespace std;
 
+class Library {
+    
     public:
+   
+    vector<Book> books;
 
-    Book books[10]; 
-
-    void addBook(Book& book);
-    void displayBooksByAuthor(Author& author);
-
+    void add_book(Book& book);
+    void display_all_books();
+    void display_books_by_author(Author& author);
 };
+
+#endif

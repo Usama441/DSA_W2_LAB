@@ -1,8 +1,8 @@
 # Define variables
 CXX = g++
-CXXFLAGS = -g -Wall   # Added -Iheader to specify header file location
+CXXFLAGS = -g -Wall -Iheader   # Added -Iheader to specify header file location
 TARGET = main
-SOURCES = source/main.cpp 
+SOURCES = source/main.cpp source/Library.cpp source/Book.cpp source/Author.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 
 # Default target to build the executable

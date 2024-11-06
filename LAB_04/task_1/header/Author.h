@@ -1,22 +1,26 @@
 
+#ifndef AUTHOR_H
+#define AUTHOR_H
+
 #include <string> 
 #include "Book.h"
+#include <vector>
 
 using namespace std;
 
 class Author{
 
-    private:
+    public:
 
     string name;
 
-    Book book[10];
+    vector<Book> books;
 
-    public:
-
-    Author(string name);
+    Author(string n);
     
     void add_books(Book& coming_book);
     void display_books();
     
 };
+
+#endif
