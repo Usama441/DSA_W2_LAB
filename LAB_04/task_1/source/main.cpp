@@ -13,13 +13,20 @@ void clear_screen() {
     system("clear");
 #endif
 
+void display();
 }
 
 int main() {
     
     clear_screen();
 
-    Book book1("The Great Gatsby", "9780743273565", 1925);
+    display();
+
+    return 0;
+}
+
+void display(){
+        Book book1("The Great Gatsby", "9780743273565", 1925);
     Book book2("To Kill a Mockingbird", "9780061120084", 1960);
     Book book3("1984", "9780451524935", 1949);
 
@@ -42,6 +49,4 @@ int main() {
     
     cout << "\nAll Books in Library : " << endl << endl;
     library.display_all_books();
-
-    return 0;
 }
