@@ -2,13 +2,26 @@
 #include "Car.h"
 
 #include <iostream>
+#include <string>
 
-Car::Car(const std::string &make, const std::string &model, const Engine &engine)
-    : make(make), model(model), engine(engine) {}
+using namespace std;
 
-Car::Car(const Car &other) : make(other.make), model(other.model), engine(other.engine) {}
+Car :: Car(string m,string md,Engine &engine): engine(engine){
 
-void Car::display() const {
-    std::cout << "Car Make: " << make << ", Model: " << model << std::endl;
+        make = m;
+        model = md;
+        
+}
+
+Car :: Car(Car &other): make(other.make), model(other.model), engine(other.engine) {
+        
+        this-> make = other.make;
+        this-> model = other.model;
+        this->engine = other.engine;
+}
+
+void Car :: display(){
+    
+    cout << "Car Make: " << make << ", Model: " << model << endl;
     engine.display();
 }

@@ -1,38 +1,18 @@
+#include "Car.h"
+#include "Engine.h"
 #include <iostream>
 
 using namespace std;
 
 int main(){
-   
     
-    int size = 0;
-    int value = 0;
-    int sum  = 0;
-    double avrage = 0;
-
-    cout << "Enter the size of array : ";
-    cin >> size;
-
-    int* arr = new int[size];
-
-    cout << "\nEnter the "<< size <<" vallues manually : " << endl << endl ;
-
-    for(int i = 0 ; i < size ; i++){
-       
-       cout << "Enter value at arr [" << i<< "] : ";
-       cin >> value ;
-       arr[i] = value ;
-       value = 0 ;
-
-    }
-
-    for(int i = 0 ; i < size ; i++){
-        
-        sum = sum + arr[i]; 
-    }
-
-
-    avrage = sum / size;
-    cout << "\nAverage of " << sum << "/" << size << " is : " << avrage;
- 
-}
+    Engine engine("V8",1000);
+    
+    Car car1("Honda","1986",engine);  
+    
+    Car car2 = car1;
+    
+    car1.display();
+    
+    car2.display();
+}   

@@ -1,38 +1,37 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main(){
-   
+
     
-    int size = 0;
-    int value = 0;
-    int sum  = 0;
-    double avrage = 0;
+    int number_of_string = 0;
+    string user_input;
 
     cout << "Enter the size of array : ";
-    cin >> size;
+    cin >> number_of_string;
 
-    int* arr = new int[size];
+    string* str_arr = new string[number_of_string];
 
-    cout << "\nEnter the "<< size <<" vallues manually : " << endl << endl ;
-
-    for(int i = 0 ; i < size ; i++){
+    cout << "\nEnter the "<< number_of_string <<" strings  : " << endl << endl ;
+    
+    cin.ignore();
+    
+    for(int i = 0 ; i < number_of_string ; i++){
        
        cout << "Enter value at arr [" << i<< "] : ";
-       cin >> value ;
-       arr[i] = value ;
-       value = 0 ;
+       
+       getline(cin, str_arr[i]);
 
     }
 
-    for(int i = 0 ; i < size ; i++){
+    for(int i = 0 ; i < number_of_string; i++){
         
-        sum = sum + arr[i]; 
+        cout << "String at arr [" << i<< "] : ";
+
+        cout<< str_arr[i] << endl;
     }
 
-
-    avrage = sum / size;
-    cout << "\nAverage of " << sum << "/" << size << " is : " << avrage;
- 
+     delete[] str_arr;
 }

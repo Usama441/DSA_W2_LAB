@@ -10,11 +10,13 @@ class Engine {
    private:
 
    string engine_type;
-   int hourse_power;
+   int horse_power;
    
    public:
-   
+
    Engine(string type,int hp);
-   Engine(const Engine &other);
+   Engine( Engine &other);
+   void display();
 };
+
 #endif
