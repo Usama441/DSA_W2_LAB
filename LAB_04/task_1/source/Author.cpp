@@ -21,7 +21,7 @@ void Author :: add_books(Book& coming_book){
 
 }
 
-void Author::display_books() {
+void Author :: display_books() {
 
     cout << "Author : " << name << endl;
     if (books.empty()) {
@@ -32,6 +32,7 @@ void Author::display_books() {
                  << ", ISBN: " << books[i].Isbn
                  << ", Published: " << books[i].Publication_year << endl;
         }
+ 
     }
 }
 
