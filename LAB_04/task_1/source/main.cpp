@@ -13,8 +13,10 @@ void clear_screen() {
     system("clear");
 #endif
 
-void display();
+
 }
+
+void display();
 
 int main() {
     
