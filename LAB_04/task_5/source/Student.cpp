@@ -27,7 +27,7 @@ void Student :: display_students_info(){
 
     for (const auto& student : students) {
         cout << "Name: " << student.student_name 
-             << ", ID: " << student.student_id 
-             << ", Department: " << student.department << endl;
+             << " , ID: " << student.student_id 
+             << " , Department: " << student.department << endl;
     }
 }
