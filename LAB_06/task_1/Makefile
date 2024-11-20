@@ -2,7 +2,7 @@
 CXX = g++
 CXXFLAGS = -g -Wall -Iheader   # Added -Iheader to specify header file location
 TARGET = main
-SOURCES = main.cpp
+SOURCES = source/main.cpp source/Linked_list.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 
 # Default target to build the executable
