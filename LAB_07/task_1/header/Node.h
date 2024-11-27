@@ -14,6 +14,7 @@ class Node {
 
 void insertAtHead(Node* &head,int value);
 void insertAtEnd(Node* &head,int value);
-void printlist(Node* &head);
+void printList(Node* &head);
+void printListRevers(Node* &head);
 
 #endif 
