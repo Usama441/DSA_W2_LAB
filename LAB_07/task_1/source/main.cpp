@@ -17,9 +17,12 @@ int main() {
 
     cout << "List after inserting at the end: ";
     printList(head);
-
+    
+    cout << "Task # 01"<<endl;
     cout << "List in reverse order: ";
     printListRevers(head);
-
+    
+    cout << "Task # 02"<<endl;
+    nodesCounter(head);
     return 0;
 }

@@ -15,6 +15,8 @@ class Node {
 void insertAtHead(Node* &head,int value);
 void insertAtEnd(Node* &head,int value);
 void printList(Node* &head);
-void printListRevers(Node* &head);
+void printListRevers(Node* &head);//task#01
+void nodesCounter(Node* &head);//task#02
+void deleteNode(Node* &head,int position);//task#03
 
 #endif 

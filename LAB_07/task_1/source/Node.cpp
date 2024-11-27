@@ -67,3 +67,33 @@ void printListRevers(Node*& head) {
     }
     cout << endl;
 }
+
+void nodesCounter(Node* &head){
+    
+    Node* temp = head;
+    int counter = 0 ;
+
+    while (temp != NULL)
+    {
+       counter++;
+        temp = temp->next;
+    }
+    cout <<"Nodes in list : "<<counter<<endl;
+}
+
+void deleteNode(Node* &head,int position){
+    
+    Node* temp;
+    temp = head;
+
+    int lenght =1;
+
+    while(temp !=nullptr){
+
+        if (lenght == position){
+
+        }
+    }
+
+
+}
