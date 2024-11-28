@@ -42,14 +42,18 @@ void printList(Node*& head) {
         return;
     }
     Node* temp = head;
-    while (temp != nullptr) { 
-        cout << temp->data << " ";
+    while (temp != nullptr) {
+        
+        cout <<"|"<<temp->data << "|";
+        if (temp->next != nullptr) {
+            cout << "<-";
+        }
         temp = temp->next;
     }
     cout << endl;
 }
 
-
+// Task #01
 void printListRevers(Node*& head) {
     if (head == nullptr) {         
         cout << "The list is empty." << endl;
@@ -67,7 +71,7 @@ void printListRevers(Node*& head) {
     }
     cout << endl;
 }
-
+//Task #02
 void nodesCounter(Node* &head){
     
     Node* temp = head;
@@ -80,7 +84,7 @@ void nodesCounter(Node* &head){
     }
     cout <<"Nodes in list : "<<counter<<endl;
 }
-
+//Task #03
 void deleteNode(Node* &head,int position){
     
     Node* temp;
@@ -96,4 +100,59 @@ void deleteNode(Node* &head,int position){
     }
 
 
+}
+
+//Task #04
+
+void sortAnList(Node* &head){
+
+   if (head == nullptr) return;
+
+    Node* current;
+    Node* next;
+    bool swapped;
+
+    do {
+        swapped = false;
+        current = head;
+
+        while (current->next != nullptr) {
+
+            if (current->data > current->next->data) {
+                int temp = current->data;
+                current->data = current->next->data;
+                current->next->data = temp;
+                swapped = true;
+            }
+            current = current->next;
+        }
+    } while (swapped);
+    
+}
+
+void mergingList(Node* &firstListHead,Node* &secondListHead,Node* &finalListHead){
+
+    if (firstListHead == nullptr) {
+        finalListHead = secondListHead;
+        return;
+    }
+    if (secondListHead == nullptr) {
+        finalListHead = firstListHead;
+        return;
+    }
+
+    
+    finalListHead = firstListHead;
+
+
+    Node* temp = firstListHead;
+    while (temp->next != nullptr) {
+        temp = temp->next;
+    }
+
+  
+    temp->next = secondListHead;
+    secondListHead->previous = temp;
+
+    sortAnList(finalListHead);
 }

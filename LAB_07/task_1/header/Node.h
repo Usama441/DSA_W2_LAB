@@ -18,5 +18,6 @@ void printList(Node* &head);
 void printListRevers(Node* &head);//task#01
 void nodesCounter(Node* &head);//task#02
 void deleteNode(Node* &head,int position);//task#03
-
+void sortAnList(Node* &head);//task#04
+void mergingList(Node* &firstListHead,Node* &SecondListHead,Node* &final_list);
 #endif 

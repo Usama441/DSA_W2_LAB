@@ -3,26 +3,44 @@
 using namespace std;
 
 int main() {
-    Node* head = nullptr;
+    Node* firstList = nullptr;
+    Node* secondList = nullptr;
+    Node* thirdList = nullptr;
 
-    insertAtHead(head, 10);
-    insertAtHead(head, 20);
-    insertAtHead(head, 30);
+    insertAtHead(firstList, 10);
+    insertAtHead(firstList, 20);
+    insertAtHead(firstList, 30);
 
     cout << "List in forward order: ";
-    printList(head);
+    printList(firstList);
 
-    insertAtEnd(head, 40);
-    insertAtEnd(head, 50);
+    insertAtEnd(firstList, 40);
+    insertAtEnd(firstList, 50);
 
     cout << "List after inserting at the end: ";
-    printList(head);
+    printList(firstList);
     
     cout << "Task # 01"<<endl;
     cout << "List in reverse order: ";
-    printListRevers(head);
+    printListRevers(firstList);
     
     cout << "Task # 02"<<endl;
-    nodesCounter(head);
+    nodesCounter(firstList);
+    
+    cout << "Task # 04"<<endl;
+    insertAtHead(secondList, 70);
+    insertAtHead(secondList, 90);
+    insertAtHead(secondList, 80);
+    insertAtEnd(secondList, 100);
+    insertAtEnd(secondList, 60);
+    cout << "First list  : ";
+    printList(firstList);
+    cout << "Second list : ";
+    printList(secondList);
+
+    mergingList(firstList,secondList,thirdList);
+    cout << "After storing <2> Lists in <1> list : ";
+    printList(thirdList);
+
     return 0;
 }
