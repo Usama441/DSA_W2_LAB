@@ -9,7 +9,7 @@ class Stack{
   
 public:
 
-    int data[10];
+    int data[5];
     int top;
 
 
