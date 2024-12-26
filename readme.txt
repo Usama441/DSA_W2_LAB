@@ -1,7 +1,7 @@
 
 DSA lab W-2
 
-Mam Shifa Naveed
+Course Instructor :: Mam Shifa Naveed
 
 You need some extention to run the code 
 
