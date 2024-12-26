@@ -2,9 +2,9 @@
 #define STACK_H
 
 
-
-#include <iostream>
 #include "Node.h"
+#include <iostream>
+
 
 using namespace std;
 

@@ -1,12 +1,13 @@
      
- #include <iostream>
- #include "Node.h"   
+#include <iostream>
+#include "Node.h"   
+#include "Stack.h"
 
  using namespace std;   
     
     Stack :: Stack(){
 
-        top=nullptr;
+        top = NULL;
         
     }
 

@@ -1,5 +1,5 @@
-#ifndef STACK_H
-#define STACK_H
+#ifndef NODE_H
+#define NODE_H
 
 class Node{
  
@@ -7,8 +7,7 @@ class Node{
     
     int data;
     Node *next;
-    
-   
+     
     Node(int value);
 };
 
